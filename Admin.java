@@ -6,7 +6,7 @@ public class Admin {
     private int id;
     private List<Cours> cours;
     
-    public admin(String nom, int id){
+    public Admin(String nom, int id){
         this.id = id;
         this.nom = nom;
         this.cours = new ArrayList<>();
@@ -23,6 +23,11 @@ public class Admin {
 
     public void ajoute(Cours cours){
         this.cours.add(cours);
+    }
+
+    @Override
+    public String toString() {
+        return "Le professeur "+this.nom+"("+this.id+") fait ces cours : "+this.cours ;
     }
     
 }
