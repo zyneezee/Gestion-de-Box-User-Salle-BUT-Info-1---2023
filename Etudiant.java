@@ -30,4 +30,8 @@ public class Etudiant {
     public void ajouteNote(Note note){
         this.lesNotes.add(note);
     }
+    @Override
+    public String toString(){
+        return "Le numero d'etudiant :" + this.numEtudiant + ", le prenom d'etudiant : " + this.prenom + ", le nom d'etudiant :  " + this.nom ;
+    }
 }
