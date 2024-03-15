@@ -1,8 +1,11 @@
+import java.util.List;
+
 public class Salle {
     private int idSalle;
     private String nom;
     private int capacite;
     private int superficie;
+    private List<Horaire> lesHoraires;
 
     public Salle(int idSalle, String nom, int capacite, int superficie){
         this.idSalle = idSalle;
@@ -26,4 +29,6 @@ public class Salle {
     public int getSuperficie(){
         return this.superficie;
     }
+
+
 }
